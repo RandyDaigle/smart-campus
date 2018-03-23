@@ -8,7 +8,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="google-signin-client_id" content="803315098158-ssu7hppidb2s9cvkbgemoh9a2a4vi8um.apps.googleusercontent.com">
+	<meta name="google-signin-client_id" content="366382206107-l7ot7ibl0co511a7bh0p13nfa7kgl74k.apps.googleusercontent.com">
 
 	<!--Bootstrap CSS and JavaScript-->
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -97,15 +97,17 @@
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li <?php if ($currentPage === "home"){ echo "class=\"active\"";} ?> ><a href="/index.php">Home</a></li>
-					<li <?php if ($currentPage === "events-all" || $currentPage === "events-day" || $currentPage === "events-month"){ echo "class=\"active\"";} ?> class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Event Details<span class="caret"></span></a>
+					<li <?php if ($currentPage === "calendar" || $currentPage === "events-all" || $currentPage === "events-day" || $currentPage === "events-month"){ echo "class=\"active\"";} ?> class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Event Details<span class="caret"></span></a>
 						<ul class="dropdown-menu">
+							<li <?php if ($currentPage === "calendar"){ echo "class=\"active\"";} ?> ><a href="/calendar.php">Event Calendar</a></li>
 							<li <?php if ($currentPage === "events-all"){ echo "class=\"active\"";} ?> ><a href="/events/events-all.php">All Events</a></li>
 							<li <?php if ($currentPage === "events-month"){ echo "class=\"active\"";} ?> ><a href="/events/events-month.php">Monthly</a></li>
 							<li <?php if ($currentPage === "events-day"){ echo "class=\"active\"";} ?> ><a href="/events/events-day.php">Daily</a></li>
 						</ul>
 					</li>
 					<li <?php if ($currentPage === "map"){ echo "class=\"active\"";} ?> ><a href="/campusmap.php">Campus Map</a></li>
-					<li <?php if ($currentPage === "messages"){ echo "class=\"active\"";} ?> ><a href="/messageboard.php">Message Board</a></li>
+					<li <?php if ($currentPage === "socialmedia"){ echo "class=\"active\"";} ?> ><a href="/socialmedia.php">Social Media</a></li>
+					<!--<li <?php if ($currentPage === "messages"){ echo "class=\"active\"";} ?> ><a href="/messageboard.php">Message Board</a></li>-->
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li id="Welcome" style="display: none"></li>
